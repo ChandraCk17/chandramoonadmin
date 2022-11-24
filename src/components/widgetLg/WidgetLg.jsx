@@ -8,6 +8,7 @@ export default function WidgetLg() {
     <div className="widgetLg">
         <h3 className="widgetLgTitle">Latest transactions</h3>
         <table className="widgetLgTable">
+            <tbody>
             <tr className="widgetLgTr">
                 <th className="widgetLgTh">Customer</th>
                 <th className="widgetLgTh">Date</th>
@@ -16,7 +17,7 @@ export default function WidgetLg() {
             </tr>
             <tr className="widgetLgTr">
                 <td className="widgetLgUser">
-                    <img src=""
+                    <img src="https://wallpapers.com/images/hd/cristiano-ronaldo-blue-artwork-jcldf0d36ejdtq5h.webp"
                     alt=""
                     className="widgetLgImg"
                     />
@@ -28,7 +29,53 @@ export default function WidgetLg() {
                     <Button type="Approved" />
                 </td>
             </tr>
+            <tr className="widgetLgTr">
+                <td className="widgetLgUser">
+                    <img
+                    src="https://wallpapers.com/images/hd/cristiano-ronaldo-blue-artwork-jcldf0d36ejdtq5h.webp"
+                    alt=""
+                    className="widgetLgImg"
+                    />
+                    <span className="widgetLgName">Ronaldo</span>
+                </td>
+                <td className="widgetLgDate">2 Jun 2021</td>
+                <td className="widgetLgAmount">$122.00</td>
+                <td className="widgetLgStatus">
+                    <Button type="Declined" />
+                </td>
+            </tr>
+            <tr className="widgetLgTr">
+                <td className="widgetLgUser">
+                <img
+                    src="https://wallpapers.com/images/hd/cristiano-ronaldo-blue-artwork-jcldf0d36ejdtq5h.webp"
+                    alt=""
+                    className="widgetLgImg"
+                    />
+                    <span className="widgetLgName">Ronaldo</span>
+                </td>
+                <td className="widgetLgDate">2 Jun 2021</td>
+                <td className="widgetLgAmount">$122.00</td>
+                <td className="widgetLgStatus">
+                    <Button type="Pending" />
+                </td>
+            </tr>
+            <tr className="widgetLgTr">
+                <td className="widgetLgUser">
+                <img
+                    src="https://wallpapers.com/images/hd/cristiano-ronaldo-blue-artwork-jcldf0d36ejdtq5h.webp"
+                    alt=""
+                    className="widgetLgImg"
+                    />
+                    <span className="widgetLgName">Ronaldo</span>
+                </td>
+                <td className="widgetLgDate">2 Jun 2021</td>
+                <td className="widgetLgAmount">$122.00</td>
+                <td className="widgetLgStatus">
+                    <Button type="Approved" />
+                </td>
+            </tr>
+           </tbody> 
         </table>
     </div>
-  )
+  );
 }
