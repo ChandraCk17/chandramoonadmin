@@ -4,6 +4,7 @@ import "./app.css";
 import Home from "./pages/home/Home";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import UserList from "./pages/userList/UserList";
+
 function App() {
   return (
     <Router>
@@ -11,12 +12,8 @@ function App() {
     <div className="container">
       <Sidebar />
       <Routes>
-        <Route exact path="/">
-          <Home />
-        </Route>
-        <Route path="/users">
-          <UserList />
-        </Route>
+        <Route path="/" element={<Home />} />
+        <Route path="/users" element={<UserList />} />
       </Routes>
     </div>
   </Router>
